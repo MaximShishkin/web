@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>АВТОРИЗАЦИЯ НА САЙТЕ</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function func()
+            {
+                const log = document.getElementById("login").value;
+                const pas = document.getElementById("password").value;
+                
+                if((log=="login") && (pas=="qwerty123"))
+                {
+                   alert("Добро пожаловать!");
+                   document.location.href = "second_page.html";
+                }
+                else
+                {
+                    alert("Ошибка при вводе пары логин-пароль!");
+                } 
+            }
+        </script>
+        <style>
+            tr
+            {
+                height: 50px;
+            }
+            td
+            {
+                width: 150px;
+                text-align: center;
+            }
+            p
+            {
+                color: red;
+            }
+            input
+            {
+                border-style: ridge;
+                border-color: red;
+                border-width: 5px;
+                color: blue;
+                font-family: serif;
+                font-size: 20px;
+                background-color: white;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <table>
+            <tr>
+                <td> 
+                    <p>Введите логин и пароль</p>
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <p>Логин</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="login"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Пароль</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" id="password"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value = "ВОЙТИ!" onclick="func()"/>
+                </td>
+            </tr>
+        </table> 
+        </center>
+    </body>
+</html>

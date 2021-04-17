@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_second_page.css">
+        <script>
+            function ConvertToK() {
+                let numb1;
+                numb1 = parseInt(document.getElementById("number1").value);
+                const numb2 = 273;
+                document.getElementById("out").value = numb1+numb2;
+                // alert("Значение градусов в Кельвинах: " + plus);
+            }
+            
+            function ConvertToF() {
+                let numb1 = parseInt(document.getElementById("number1").value);
+                const numb2 = 32;
+                let plus = (numb1*9)/5+numb2;
+                document.getElementById("out").value = plus;
+                // alert("Значение градусов в Фаренгейтах: " + plus);
+            }
+            
+            function TEST() {
+                let x = parseInt(document.getElementById("number1").value);
+                
+                if(x>0) {
+                    alert("Положительное число");
+                } else{
+                    alert("Отрицательное число");
+                }  
+            }
+            
+            function plus() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 + per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function minus() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 - per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function multiplication() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 * per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function division() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 / per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function exponentiation() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 ** per2;
+                document.getElementById("res").value = res;
+            }
+        </script>
+    </head>
+    <body class="back-all">
+        <div class="div-2">
+            <h1 class="blue-h1"> Сравнение характеристик планет Солнечной системы</h1>
+        </div>
+        
+        <div class="div-1">
+            <table class="table-1">
+                <tr>
+                    <td>
+                        <form action="home_page.html" target="_blank">
+                            <button class="btn-1">НА ГЛАВНУЮ</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="simple_calculator.html" target="_blank">
+                            <button class="btn-1">ПРОСТОЙ КАЛЬКУЛЯТОР</button>
+                        </form>    
+                    </td>
+                    <td>
+                        <form action="advanced_calculator.html" target="_blank">
+                            <button class="btn-1">ПРОДВИНУТЫЙ КАЛЬКУЛЯТОР</button>
+                        </form> 
+                    </td>
+                    <td>
+                        <form action="first_game.html" target="_blank">
+                            <button class="btn-1">ПЕРВАЯ ИГРА</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+      
+        <div class="div-2">
+        <table class = "table-1">
+            <tr>
+                <td> Название планеты </td>
+                <td> Меркурий </td>
+                <td> Венера </td>
+                <td> Земля </td>
+                <td> Марс </td>
+                <td> Юпитер </td>
+                <td> Сатурн </td>
+                <td> Уран </td>
+                <td> Нептун </td>
+            </tr>
+            <tr>
+                <td >Масса (10<sup>24</sup> кг)</td>
+                <td >0,330</td>
+                <td >4,87</td>
+                <td >5,97</td>
+                <td >0,642</td>
+                <td >1899</td>
+                <td >568</td>
+                <td >86,8</td>
+                <td >102</td>
+            </tr>
+            <tr>
+                <td >Диаметр (км)</td>
+                <td >4879</td>
+                <td >12104</td>
+                <td >12756</td>
+                <td >6794</td>
+                <td >142984</td>
+                <td >120536</td>
+                <td >51118</td>
+                <td >49528</td>
+            </tr>
+            <tr>
+                <td >Плотность (кг/м<sup>3</sup>)</td>
+                <td >5427</td>
+                <td >5243</td>
+                <td >5515</td>
+                <td >3933</td>
+                <td >1326</td>
+                <td >687</td>
+                <td >1270</td>
+                <td >1638</td>
+            </tr>
+            <tr>
+                <td >Период вращения (часы)</td>
+                <td >1407.6</td>
+                <td >-5832.5</td>
+                <td >23.9</td>
+                <td >24.6</td>
+                <td >9.9</td>
+                <td >10.7</td>
+                <td >-17.2</td>
+                <td >16.1</td>
+            </tr>
+            <tr>
+                <td >Продолжительность дня (часы)</td>
+                <td >4222.6</td>
+                <td >2802.0</td>
+                <td >24.0</td>
+                <td >24.7</td>
+                <td >9.9</td>
+                <td >10.7</td>
+                <td >17.2</td>
+                <td >16.1</td>
+            </tr>
+            <tr>
+                <td >Расстояние от Солнца (млн. км)</td>
+                <td >57.9</td>
+                <td >108.2</td>
+                <td >149.6</td>
+                <td >227.9</td>
+                <td >778.6</td>
+                <td >1433.5</td>
+                <td >2872.5</td>
+                <td >4495.1</td>
+            </tr>
+            <tr>
+                <td >Орбитальный период (дней)</td>
+                <td >88.0</td>
+                <td >224.7</td>
+                <td >365.2</td>
+                <td >687.0</td>
+                <td >4331</td>
+                <td >10747</td>
+                <td >30589</td>
+                <td >59800</td>
+            </tr>
+            <tr>
+                <td >Температура (k)</td>
+                <td >167</td>
+                <td >464</td>
+                <td >15</td>
+                <td >-65</td>
+                <td >-110</td>
+                <td >-140</td>
+                <td >-195</td>
+                <td >-200</td>
+            </tr>
+            <tr>
+                <td >Количество спутников</td>
+                <td >0</td>
+                <td >0</td>
+                <td >1</td>
+                <td >2</td>
+                <td >63</td>
+                <td >47</td>
+                <td >27</td>
+                <td >13</td>
+            </tr>
+        </table>
+        </div>
+        
+        <div class="div-1">
+            <img src = "https://static8.depositphotos.com/1186840/839/i/600/depositphotos_8390815-stock-photo-red-planet.jpg" height="400">
+            <img src ="marss.jpg" height="400">
+        </div>
+        
+        <div class="div-2">
+            <p>Введите число здесь: <input type="text" id="number1"></p>
+            <button onclick="ConvertToK()">Перевод в Кельвины</button>
+            <button onclick="ConvertToF()">Перевод в Фаренгейты</button>
+            <button onclick="TEST()">Проверь себя!</button>
+            <p>Ответ: <input type="text" id="out"></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Простой калькулятор</title>
+        <meta charset="utf-8">
+        <style>
+            /*p {
+                color: green;
+                font-size: 30px;
+                background-color: beige;
+            }*/
+          .div-1 {
+              background-color: bisque; /* задний фон */
+              border: 2px solid black; /* Толщина и цвет рамки */
+              text-align: center; /* Центрирование текста */
+              border-radius: 25px; /* Закругление краёв блока div */
+              margin-top: 50px;
+              margin-right: 50px;  
+              padding: 20px;
+           }
+          .div-2 {
+              background-color: antiquewhite; /* задний фон */
+              border: 2px solid black; /* Толщина и цвет рамки */
+              text-align: center; /* Центрирование текста */
+              border-radius: 25px; /* Закругление краёв блока div */
+              margin-top: 50px;
+              margin-left: 50px;
+              padding: 20px;
+          }
+          .btn-1 {
+              background: #8C959D; /* что-то серое, фон*/
+              color: white; /* цвет текста*/
+              border-radius: 10px;
+              padding: 20px;
+          }
+          .table-1 {
+                margin: auto;
+          }
+        </style>
+        <script>
+            function plus() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 + per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function minus() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 - per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function multiplication() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 * per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function division() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 / per2;
+                document.getElementById("res").value = res;
+            }
+            
+            function exponentiation() {
+                let per1 = parseInt(document.getElementById("numb1").value);
+                let per2 = parseInt(document.getElementById("numb2").value);
+                let res = per1 ** per2;
+                document.getElementById("res").value = res;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div class="div-1">
+            <table class="table-1">
+                <tr>
+                    <td>
+                        <form action="home_page.html" target="_blank">
+                            <button class="btn-1">НА ГЛАВНУЮ</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="advanced_calculator.html" target="_blank">
+                            <button class="btn-1">ПРОДВИНУТЫЙ КАЛЬКУЛЯТОР</button>
+                        </form>    
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="div-2">
+            <p>Введите первое число здесь: <input type="text" id="numb1"></p>
+            <p>Введите второе число здесь: <input type="text" id="numb2"></p>
+            <button onclick="plus()">+</button>
+            <button onclick="minus()">-</button>
+            <button onclick="multiplication()">*</button>
+            <button onclick="division()">/</button>
+            <button onclick="exponentiation()">^</button>
+            <p>Результат: <input type="text" id="res"></p>
+        </div>
+    </body>
+</html>

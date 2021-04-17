@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Продвинутый калькулятор</title>
+        <meta charset="utf-8">
+        <style>
+           #calculator * {
+                font-size: 16px;
+           }
+	       #calculator table {
+               border: solid 3px silver; 
+               border-spacing: 3px; 	
+               background-color: #EEE; 
+           }
+	       #calculator table td {
+               border-spacing: 3px;
+           }
+	       input.display {
+               width: 166px; 
+               text-align: right;
+           }
+	       td.buttons {
+               border-top: solid 1px silver;
+           }	
+	       input[type= button] {
+               width: 40px; 
+               height: 30px;
+           }
+          .div-1 {
+              background-color: bisque; /* задний фон */
+              border: 2px solid black; /* Толщина и цвет рамки */
+              text-align: center; /* Центрирование текста */
+              border-radius: 25px; /* Закругление краёв блока div */
+              margin-top: 50px;
+              margin-right: 50px;  
+              padding: 20px;
+           }
+          .div-2 {
+              background-color: antiquewhite; /* задний фон */
+              border: 2px solid black; /* Толщина и цвет рамки */
+              text-align: center; /* Центрирование текста */
+              border-radius: 25px; /* Закругление краёв блока div */
+              margin-top: 50px;
+              margin-left: 50px;
+              padding: 20px;
+           }
+          .btn-1 {
+              background: #8C959D; /* что-то серое, фон*/
+              color: white; /* цвет текста*/
+              border-radius: 10px;
+              padding: 20px;
+          }
+          .table-1 {
+                margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+         <div class="div-1">
+            <table class="table-1">
+                <tr>
+                    <td>
+                        <form action="home_page.html" target="_blank">
+                            <button class="btn-1">НА ГЛАВНУЮ</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="simple_calculator.html" target="_blank">
+                            <button class="btn-1">ПРОСТОЙ КАЛЬКУЛЯТОР</button>
+                        </form>    
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class= "div-2">
+        <form name="calc" id="calculator">
+            <table class="table-1">
+                <tr>
+                    <td>
+                        <input type="text" name="input" class="display" size="16">
+                    </td> 
+                </tr>
+                <td class="buttons"> 
+                    <input type="button" name="one" value="1" onclick="calc.input.value += '1'">
+                    <input type="button" name="two" value="2" onclick="calc.input.value += '2'">
+                    <input type="button" name="three" value="3" onclick="calc.input.value += '3'">
+                    <input type="button" name="add" value="+" onclick="calc.input.value += '+'">
+                    <br>
+                    <input type="button" name="four" value="4" onclick="calc.input.value += '4'">
+                    <input type="button" name="five" value="5" onclick="calc.input.value += '5'">
+                    <input type="button" name="six" value="6" onclick="calc.input.value += '6'">
+                    <input type="button" name="sub" value="-" onclick="calc.input.value += '-'">
+                    <br>
+                    <input type="button" name="seven" value="7" onclick="calc.input.value += '7'">
+                    <input type="button" name="eight" value="8" onclick="calc.input.value += '8'">
+                    <input type="button" name="nine" value="9" onclick="calc.input.value += '9'">
+                    <input type="button" name="mul" value="x" onclick="calc.input.value += '*'">
+                    <br>
+                    <input type="button" name="clear" value="c" onclick="calc.input.value = ''">
+                    <input type="button" name="zero" value="0" onclick="calc.input.value += '0'">
+                    <input type="button" name="doit" value="=" onclick="calc.input.value = eval(calc.input.value)">
+                    <input type="button" name="div" value="/" onclick="calc.input.value += '/'">
+                </td>
+            </table> 
+        </form>
+        </div>
+    </body>
+</html>
